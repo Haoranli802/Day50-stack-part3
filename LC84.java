@@ -7,7 +7,7 @@ class Solution {
     public int largestRectangleArea(int[] heights) {
         if(heights.length == 0) return 0;
         if(heights.length == 1) return heights[0];
-        int[] newHeights = new int[heights.length + 2];
+        int[] newHeights = new int[heights.length + 2]; 
         for(int i = 0; i < heights.length; i++){
             newHeights[i + 1] = heights[i];
         }
